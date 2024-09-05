@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+       function add(){
+            const a=document.getElementById("firstNumber").value;
+            const b=document.getElementById("secondNumber").value;
+            const element=document.getElementById("finalSum");
+            element.innerHTML=parseInt(a)+parseInt(b);
+        }
+        function Substract(){
+            const a=document.getElementById("firstNumber").value;
+            const b=document.getElementById("secondNumber").value;
+            const element=document.getElementById("finalSum");
+            element.innerHTML=parseInt(a)-parseInt(b);
+        }
+        function multi(){
+            const a=document.getElementById("firstNumber").value;
+            const b=document.getElementById("secondNumber").value;
+            const element=document.getElementById("finalSum");
+            element.innerHTML=parseInt(a)*parseInt(b);
+        }
+        function division(){
+            const a=document.getElementById("firstNumber").value;
+            const b=document.getElementById("secondNumber").value;
+            const element=document.getElementById("finalSum");
+            element.innerHTML=parseInt(a)/parseInt(b);
+        }
+        
+
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom2</title>
+</head>
+<body>
+    <div>
+
+        <h1>A Dynamic calculator</h1>
+        <input id="firstNumber" type="text" placeholder="firstNumber"><br><br>
+        <input id="secondNumber" type="text"placeholder="secondNumber"><br><br>
+        <button onclick="add()">+</button>
+        <button onclick="Substract()">-</button>
+        <button onclick="multi()">*</button>
+        <button onclick="division()">/</button>
+        
+        <p>your answer is:</p>
+        
+        <div id="finalSum"></div>
+
+
+    </div>
+   
+</body>
+</html>
